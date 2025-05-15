@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="cabeca"><h1>Do you remember?</h1></a>
+    </header>
+
+    <div class="calendar">
+        <div class="titulo">
+            <h2>Mês</h2>
+        </div>
+        <table id="tabela"></table>
+    </div>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 200px;
+            background: #d4e9f1;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #0de00d;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .calendar {
+            border: 5px solid #fff;
+            padding-bottom: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+            background-color: #ffffff;
+            height: fit-content;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .titulo {
+            background: #0de00d;
+            border-radius: 10px 10px 0 0;
+            padding: 15px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .titulo h2 {
+            margin: 0;
+            color: #fff;
+            font-size: 22px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #cabeca:hover {
+            color: white;
+        }
+
+        button:hover {
+            background: #0bb00b;
+        }
+    </style>
+</body>
+</html>

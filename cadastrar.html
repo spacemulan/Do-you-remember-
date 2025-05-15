@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" id="cabeca"><h1>Do you remember?</h1></a>
+    </header>
+
+    <div class="conteudo">
+        <h1 id="titulo2">Nova Data</h1>
+        <div class="nome">
+            <h2>Nome</h2>
+            <input type="text" id="inserirnome">
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <input type="date" id="data">
+        </div>
+        <br>
+        <div class="botoes">
+            <button type="submit" id="cadastraniver">Cadastrar</button>
+            <a href="calendario.html"><button id="calendar">Calendário</button></a>
+        </div>
+    </div>
+
+    <style>
+       body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 200px;
+            background: #d4e9f1;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #0de00d;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+
+        .data {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #data {
+            margin-left: 30px;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            font-size: 15px;
+            margin-right: 280px;
+        }
+
+        .nome {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #inserirnome {
+            margin-left: 20px;
+            height: 35px;
+            width: 400px;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: none;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        .conteudo {
+            border: 2px solid #ffff;
+            padding: 100px;
+            border-radius: 10px;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        #titulo2 {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .botoes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            background: #0de00d;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        button:hover {
+            background: #0bb00b;
+        }
+
+        #cadastraniver {
+            margin-right: 30px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #cabeca:hover {
+            color: white;
+        }
+    </style>
+</body>
+</html>

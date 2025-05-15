@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do You Remember?</title>
+    <header>
+        <h1>Do you remember?</h1>
+        <div class="dataAtual">
+            <h2><span id="data">XX/XX</span> - <span id="aniversariante"></span></h2>
+        </div>
+    </header>
+</head>
+<body>
+    <br>
+    <div class="caixa">
+        <h2>Olá visitante! O que deseja hoje?</h2>
+        <div class="botoes">
+            <br>
+            <br>
+        <a href="cadastrar.html"><button id="cadastrar">Cadastrar Aniversários</button></a>
+            <a href="calendario.html"> <button id="calendario">Calendário</button></a>
+        </div>
+    </div>
+    <style>
+         body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 250px;
+      background: #d4e9f1;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #0de00d;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      color: black;
+      margin: 10px 0;
+      
+    }
+
+    .dataAtual {
+      background: white;
+      width: 1800px;
+      height: 80px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .caixa {
+      border: 2px solid #fff;
+      border-radius: 10px;
+      background: #d4e9f1 ;
+      width: 90%;
+      max-width: 600px;
+      padding: 20px 20px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+    border: 2px solid #ffff; 
+
+    }
+
+    .caixa h2 {
+      margin-top: 30px ;
+      text-align: center;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 80px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      background: #0de00d;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    button:hover {
+      background: #0bb00b;
+    }
+
+    footer {
+      color: #d4e9f1;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    </style>
+</body>
+  <footer>
+            <p>produzido por izadora carvalhal</p>
+        </footer>
+</html>
