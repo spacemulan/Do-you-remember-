@@ -14,9 +14,20 @@
         <div class="titulo">
             <h2>Mês</h2>
         </div>
-        <table id="tabela"></table>
+        <table id="tabela">
+            <div id="aniversariantes">
+                <h2>Aniversariantes Salvos</h2>
+                <ul id="listaPessoas"></ul>
+            </div>        
+        </table>
+
+        <div class="botoes">
+            <button type="submit" id="cadastraniver"></button>
+            <a href="calendario.html"><button id="calendar"></button></a>
+        </div>
     </div>
 
+   
     <style>
         body {
             display: flex;
@@ -93,6 +104,18 @@
             text-decoration: none;
         }
 
+        .calendar, button{
+           
+            background: #0de00d;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
         #cabeca:hover {
             color: white;
         }
@@ -101,5 +124,7 @@
             background: #0bb00b;
         }
     </style>
+
+    <script src="main.js"></script>
 </body>
 </html>
