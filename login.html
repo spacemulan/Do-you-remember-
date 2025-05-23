@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+</head>
+<body>
+  <header>
+    <a href="#" id="cabeca"><h1>Do you remember?</h1></a>
+  </header>
+
+  <div class="caixa">
+    <div class="subtitulo">
+      <h2>Login</h2>
+    </div>
+    <form id="loginForm">
+      <div class="emailbox">
+        <p>Email:</p>
+        <input type="email" id="email" />
+      </div>
+      <div class="senhabox">
+        <p>Senha:</p>
+        <input type="password" id="senha" />
+      </div>
+      <button type="submit" id="entrar">Entrar</button>
+    </form>
+  </div>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 200px;
+      background: #d4e9f1;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #0de00d;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .caixa {
+      border-radius: 10px;
+      background: #d4e9f1;
+      width: 90%;
+      max-width: 600px;
+      border: 2px solid #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0;
+    }
+
+    .subtitulo {
+      background: #0de00d;
+      border-radius: 10px 10px 0 0;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .subtitulo h2 {
+      margin: 0;
+      font-size: 18px;
+      color: white;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .emailbox, .senhabox {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 10px;
+    }
+
+    .emailbox p, .senhabox p {
+      width: 80px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    input {
+      flex: 1;
+      height: 25px;
+      border-radius: 10px;
+      border: none;
+      padding: 5px;
+      font-size: 15px;
+      margin-left: 10px;
+    }
+
+    button {
+      background: #0de00d;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #0bb00b;
+    }
+  </style>
+
+  <script>
+    const emailCorreto = "teste@email.com";
+    const senhaCorreta = "123456";
+
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+
+      if (email === emailCorreto && senha === senhaCorreta) {
+        window.location.href = "index.html"; 
+      } else {
+        alert("Email ou senha incorretos!");
+      }
+    });
+  </script>
+</body>
+</html>
